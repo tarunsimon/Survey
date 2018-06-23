@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+  <title>Everkid Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+  
+   <style type="text/css">
+  
+  
+  
+  .jumbotron{
+  padding: 10px 5px 20px 15px;
+    border-radius: 15px;
+  background: linear-gradient(90deg,#ffc3a0, #ffafbd)
+}
+  #main{
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(#ffafbd, #ffc3a0);
+      font-family: 'Montserrat', sans-serif;
+}
+     
+    
+    #name{
+      background: #ffe8e8;
+    border: none;
+    padding: 7px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 4px;
+      padding-bottom: 5px;
+    }
+    
+#email{
+  background: #ffe8e8;
+    border: none;
+    padding: 7px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 4px;
+  padding-bottom: 5px;
+   position: absolute;
+right: 408px;
+}
+
+
+#submit {
+    background-color: #ffe8e8; 
+    padding: 10px;
+  box-shadow: 1px 1px 4px grey;
+  border-radius:15px;
+    color: black; 
+    border: 2px solid #ff0844;
+}
+
+#submit:hover {
+    background: linear-gradient(90deg,#ff0844,#ffb199);
+    color: white;
+}
+#comments{
+  background: #ffe8e8;
+    border: none;
+    padding: 7px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 4px;
+  padding-bottom: 5px;
+}
+
+
+  
+  
+  
+  
+  
+  
+  </style>
+  </head>
+    <body>
+    
+    
+    
+    
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div id="main">
+  <div class="container">
+  <div class="jumbotron">
+    <h1 align="center" id="title"><b>Everkid Survey</b></h1>
+  <p id="description" align="center">Help us get better.</div>
+
+    </div>
+  
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 align="center"> Be a part of our Improvement step</h3>
+        <h4 align="center"> This really helps us to be a better version of ourselves</h4>
+        <br>
+        <p align="justify"> We conducut this survey so that we could improve the faults, to track past behavior and changes in behavior and attitudes over time – hardly a forward-looking view.</p>
+        <p align="justify"> It helps us understand the goals and work towards it as we’ll find ourself holding a lot of valuable data in our hands by the end of the survey.</p>
+        <p align="justify">Apart from being inexpensive and flexible, surveys are also a practical way to gather data. Surveys allow us to gather information from a large audience and process it to make us better.
+      </div>
+      
+      
+      <div class="col-md-6">
+        
+        
+        
+        
+        
+<form id="survey-form" method="GET">
+  <form action = "/cgi-bin/hello_get.cgi" method = "get">
+    <label id="name-label" for="name"> *Name:</label> 
+            <input autofoucus type = "text" name ="name" id="name" class="input-field" placeholder = "Enter the name" style="height:25px" required maxlength = "100" />
+         <br>
+         
+        <label id="email-label" for="name"> *Email:</label> 
+            <input autofoucus type = "text" name ="email" id="email" class="input-field" placeholder = "Enter your Email" style="height:25px"  required maxlength = "100" />
+    <br>
+     
+     <label id="number-label" for="rateus"> *How do you rate us:</label> 
+            <select name="number" id="number" class="rateus">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+    <br>
+    
+     <label for="recommendus"> *How likely do you recommend us:</label> 
+            <select name="number" id="dropdown" class="rateus">
+    <option value="1">Definitely</option>
+    <option value="2">Maybe..Yes</option>
+    <option value="3">Not sure</option>
+    <option value="4">Nope</option>  
+  </select>
+    
+    <br>
+    <br>
+    
+
+
+   
+        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+  
+      
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Clothing section</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Footwear section</label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Accessories section</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Service</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Price</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Quality</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Availablity</label></li>
+        </ul>
+    
+    
+    <label for="comments">Enter your specific comments here:</label>
+   <br>
+    
+    <textarea id="comments" class="input-field" style="height:100px; width:500px; resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+
+<br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </div>
+    
+    
+
+
+
+
+
+  
+
+
+
+</div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+    </div>
+        </div>
+    </body>
